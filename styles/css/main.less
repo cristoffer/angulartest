@@ -1,0 +1,96 @@
+.bg(@color){
+    background: @color;
+    &:hover{
+        background: darken(@color, 10%);
+    } 
+}
+
+body {
+    font-size: 14px;
+
+    #loader {
+        position: fixed;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+        background: rgba(255,255,255,0.6);
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .list {
+
+        & > li {
+            border: 2px solid black;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background: rgb(200,200,220);
+            margin-bottom: 15px;
+            height: 130px;
+            @color: rgb(230,230,240);
+            .bg(@color);
+
+            &:nth-child(even) {
+                .bg(darken(@color, 10%));
+            }
+
+            a {
+                color: black;
+            }
+
+            & div {
+                height: 100%;
+            }
+
+
+
+            .imgContainer {
+                max-height: 100%;
+                max-width: 100px;
+                overflow: hidden;
+                display: inline-block;
+
+
+                & > img {
+                    max-height: 100%;
+                    
+                    margin-left: 50%;
+                    transform: translate(-50%);
+                }
+            }
+
+            span {
+                font-size: 1.3em;
+                display: inline-block;
+                vertical-align: middle;
+
+                &.glyphicon {
+                    color: red;
+
+                    &:hover {
+                        color: darken(red, 20%);
+                    }
+                }
+            }
+        }
+    }
+
+    .details {
+        img {
+            max-height: 300px;
+            max-width: 300px;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        a{
+            font-size:  1.4em;
+        }
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+}

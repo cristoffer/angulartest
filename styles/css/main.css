@@ -1,0 +1,72 @@
+body {
+  font-size: 14px;
+}
+body #loader {
+  position: fixed;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 3em;
+}
+body .list > li {
+  border: 2px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #c8c8dc;
+  margin-bottom: 15px;
+  height: 130px;
+  background: #e6e6f0;
+}
+body .list > li:hover {
+  background: #c6c6dd;
+}
+body .list > li:nth-child(even) {
+  background: #c6c6dd;
+}
+body .list > li:nth-child(even):hover {
+  background: #a6a6ca;
+}
+body .list > li a {
+  color: black;
+}
+body .list > li div {
+  height: 100%;
+}
+body .list > li .imgContainer {
+  max-height: 100%;
+  max-width: 100px;
+  overflow: hidden;
+  display: inline-block;
+}
+body .list > li .imgContainer > img {
+  max-height: 100%;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+body .list > li span {
+  font-size: 1.3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+body .list > li span.glyphicon {
+  color: red;
+}
+body .list > li span.glyphicon:hover {
+  color: #990000;
+}
+body .details img {
+  max-height: 300px;
+  max-width: 300px;
+}
+body .details p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+body .details a {
+  font-size: 1.4em;
+}
+body .pointer {
+  cursor: pointer;
+}

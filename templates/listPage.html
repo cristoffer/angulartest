@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>My friends</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list list-unstyled">
+                <li ng-repeat="item in List" ng-cloak>
+                    <friend-list-item friend="item" remove-friend="removeFriend"></friend-list-item>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
